@@ -11,15 +11,15 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ### UCI HAR Dataset  (raw data for project)  
 ### activity labels.txt  
-|	Links the class labels with their activity name.  
-|		1 WALKING  
-|		2 WALKING UPSTAIRS  
-|		3.WALKING DOWNSTAIRS  
-|		4 SITTING  
-|		5 STANDING  
-|		6 LAYING  
+	Links the class labels with their activity name.  
+		1 WALKING  
+		2 WALKING UPSTAIRS  
+		3.WALKING DOWNSTAIRS  
+		4 SITTING  
+		5 STANDING  
+		6 LAYING  
 ### features.txt  
-|          List of all features.  
+          List of all features.  
 ####		feature_id (value of 1 – 561)  
 ####		feature_label  
 tBodyAcc-mean()-X  
@@ -585,7 +585,7 @@ angle(Y,gravityMean)
 angle(Z,gravityMean)   
  
 ### features_info.txt  
-|          Shows information about the variables used on the feature vector.  
+          Shows information about the variables used on the feature vector.  
 
 #### Signals:  
 -tBodyAcc-XYZ  
@@ -626,143 +626,143 @@ angle(Z,gravityMean)
 -angle(): Angle between to vectors.  
 
 ### Additional vectors   
-|     obtained by averaging the signals in a signal window sample. These are used on the angle() variable:  
-|             -gravityMean  
-|             -tBodyAccMean  
-|             -tBodyAccJerkMean  
-|             -tBodyGyroMean  
-|             -tBodyGyroJerkMean    
+     obtained by averaging the signals in a signal window sample. These are used on the angle() variable:  
+             -gravityMean  
+             -tBodyAccMean  
+             -tBodyAccJerkMean  
+             -tBodyGyroMean  
+             -tBodyGyroJerkMean    
 
 #### subject_test.txt  
 
 #### X_test.txt  
 
 #### y_test.txt  
-|            Values of 1 – 6 indicating subject activity.  
+            Values of 1 – 6 indicating subject activity.  
 
 ### Inertial Signals  
-|       - body_acc_x_test.txt  
-|       - body_acc_y_test.txt  
-|       - body_acc_z_test.txt  
-|       - body_gyro_x_test.txt  
-|       - body_gyro_y_test.txt  
-|       -  body_gyro_z_test.txt  
-|       - total_acc_x_test.txt  
-|       - total_acc_y_test.txt  
-|       - total_acc_z_test.txt  
+       - body_acc_x_test.txt  
+       - body_acc_y_test.txt  
+       - body_acc_z_test.txt  
+       - body_gyro_x_test.txt  
+       - body_gyro_y_test.txt  
+       -  body_gyro_z_test.txt  
+       - total_acc_x_test.txt  
+       - total_acc_y_test.txt  
+       - total_acc_z_test.txt  
 
 ### train folder
-|             subject_train.txt  
-|                  - X_ train.txt  
-|                  - y_ train.txt  
-|          Values of 1 – 6 indicating subject activity.  
-|      - Inertial Signals  
-|            - body_acc_x_train.txt  
-|            - body_acc_y_train.txt  
-|            - body_acc_z_trait.txt  
-|            - body_gyro_x_train.txt  
-|            - body_gyro_y_ train.txt  
-|            -  body_gyro_z_train t.txt  
-|            - total_acc_x_train t.txt  
-|            -  total_acc_y_train.txt  
-|            -  total_acc_z_train.txt  
+             subject_train.txt  
+                  - X_ train.txt  
+                  - y_ train.txt  
+         Values of 1 – 6 indicating subject activity.  
+      - Inertial Signals  
+            - body_acc_x_train.txt  
+            - body_acc_y_train.txt  
+            - body_acc_z_trait.txt  
+            - body_gyro_x_train.txt  
+            - body_gyro_y_ train.txt  
+            -  body_gyro_z_train t.txt  
+            - total_acc_x_train t.txt  
+            -  total_acc_y_train.txt  
+            -  total_acc_z_train.txt  
 
 ### Tidy Data subproject 1  
-|          merge the training and the test sets to create one data set.  
+          merge the training and the test sets to create one data set.  
 
 **X_test**  
 
-|          X_test.txt data, 2947 observations of 561 variables  
+          X_test.txt data, 2947 observations of 561 variables  
 **y_test**  
 
-|          y_test.txt data,  2947 observations of 1 variable (activity data)  
+          y_test.txt data,  2947 observations of 1 variable (activity data)  
 **subject_test**  
 
-|          subject_test.txt data, 2947 observations of 1 variable (activity data)  
+          subject_test.txt data, 2947 observations of 1 variable (activity data)  
 **x_train**  
  
-|          x_train.txt data, 7352 observations of 561 variables  
+          x_train.txt data, 7352 observations of 561 variables  
 **y_test**  
 
-|          y_train.txt data, 7352 observations of 1 variable (activity data)  
+          y_train.txt data, 7352 observations of 1 variable (activity data)  
 **subject_test**  
 
-|          subject_test.txt data, 2947 observations of 1 variable (activity data)  
+          subject_test.txt data, 2947 observations of 1 variable (activity data)  
 **subject_train**  
 
-|          subject_train.txt data, 7352 observations of 1 variable (activity data)  
+          subject_train.txt data, 7352 observations of 1 variable (activity data)  
 **Group**  
  
-|          assigns “train” to all train subjects, assigns “test” to all test subjects
+          assigns “train” to all train subjects, assigns “test” to all test subjects
 **all_train**  
 
-|          bind of subject_train, group, y_train, x_train  
+          bind of subject_train, group, y_train, x_train  
 **all_tes**t  
 
-|          bind of subject_test, group, activity, y_test, x_test  
+          bind of subject_test, group, activity, y_test, x_test  
 **all**  
   
-|          bind of all_train, all_test  
+          bind of all_train, all_test  
 	
 ### Tidy Data subproject 2   
-|          extract only the measurements on the mean and standard deviation for each measurement.  
+          extract only the measurements on the mean and standard deviation for each measurement.  
 
 **features**  
 
-|          combine of feature_id and feature_label  
+          combine of feature_id and feature_label  
 **patterns**  
 
-|          combine of the mean and std patterns to be extracted  
+          combine of the mean and std patterns to be extracted  
 **features_mstd**  
 
-|          extraction table of feature_id and feature_label for only mean and std  
+          extraction table of feature_id and feature_label for only mean and std  
 **feature_id_vector**  
 
-|          vector of index of selected columns meeting the criteria (mean/std)  
+          vector of index of selected columns meeting the criteria (mean/std)  
 **features_mstd_df**  
  
-|          data frame of first three columns (subject, group, activity, and selected columns  
+          data frame of first three columns (subject, group, activity, and selected columns  
 
 ### Tidy Data subproject 3  
-|     Uses descriptive activity names to name the activities in the data set.  
+     Uses descriptive activity names to name the activities in the data set.  
 features_mstd_df  
 - activity numerical values renamed with activity labels.txt values  
 
-|             1   --> WALKING  
+             1   --> WALKING  
 
-|             2   --> WALKING UPSTAIRS  
+             2   --> WALKING UPSTAIRS  
 
-|             3.  --> WALKING DOWNSTAIRS  
+             3.  --> WALKING DOWNSTAIRS  
 
-|             4   --> SITTING  
+             4   --> SITTING  
 
-|             5   --> STANDING  
+             5   --> STANDING  
 
-|             6   --> LAYING  
+             6   --> LAYING  
 
 ### Tidy Data subproject 4  
-|          Appropriately label the data set with descriptive variable names. 
+          Appropriately label the data set with descriptive variable names. 
 
 **labels_vector**  
 
-|          combined values of “subject”, “group”, “activity”, and “feature_label” (values from features_mstd)
+          combined values of “subject”, “group”, “activity”, and “feature_label” (values from features_mstd)
 **features_mstd_df**  
-|     	appropriate column labels for all 69 variables
-|       tidy data set for subproject 4
+     	appropriate column labels for all 69 variables
+       tidy data set for subproject 4
 
 ### Tidy Data subproject 5
-|          From the data set in subproject 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
+          From the data set in subproject 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
 **tidy_mean_df**  
 
-|          select columns subject, group, activity, and columns matching “mean”   
+          select columns subject, group, activity, and columns matching “mean”   
 **tidy_col_vector**  
 
-|          created vector of tidy_mean_df column names  
+          created vector of tidy_mean_df column names  
 
-|          combine to include subject, group, activity columns  
+          combine to include subject, group, activity columns  
 **tidy_summary_df**  
 
-|          group by subject and activity and summarize  
-|          tidy data set for subproject 5
+          group by subject and activity and summarize  
+          tidy data set for subproject 5
 
 The sequence and functions to execute to obtain the data values for the subprojects can be followed with comments in the run_analysis.R script.
